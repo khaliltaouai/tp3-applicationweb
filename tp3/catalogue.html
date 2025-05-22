@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue - Ma Biblio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="catalogue.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">MA BIBLIO</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="catalogue.html">BIBLIOTHÈQUE</a></li>
+        <li><a href="panier.html">PANIER</a></li>
+        <li><a href="apropo.html">À PROPOS</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+
+  <main class="catalogue">
+    <div class="catalogue-header">
+      <h1>Catalogue de la Bibliothèque</h1>
+      <div class="cart-icon">
+        🛒 <a href="panier.html"><span id="cartCount">0</span></a>
+      </div>
+    </div>
+
+    <div class="slider-container">
+      <button class="nav-button left" onclick="scrollBooks(-1)">&#10094;</button>
+
+      <div class="books" id="bookList">
+        <div class="book">
+          <img src="photo/1.avif" alt="Harry Potter" />
+          <p><strong>Harry Potter and the Chamber of Secret</strong><br />JK ROWLING</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/images.jpg" alt="The Hobbit" />
+          <p><strong>The Hobbit</strong><br />J.R.R Tolkien</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/81JCma0o8YL.jpg" alt="Star Wars" />
+          <p><strong>StarWars Master &amp; Apprentice</strong><br />Claudia Gray</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/511HNE8YJ1L._AC_UF1000,1000_QL80_.jpg" alt="E.T." />
+          <p><strong>The Extra-Terrestrial</strong><br />William Kotzwinkle</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/71iiQ6fWLFL.jpg" alt="Jurassic Park" />
+          <p><strong>Jurassic Park</strong><br />Michael Crichton</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/61pDNU9qEGL.jpg" alt="Can't hurt me" />
+          <p><strong>Can’t hurt me</strong><br />David Goggins</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/61aEcUgDvbL._AC_UF1000,1000_QL80_.jpg" alt="Analyser les gens" />
+          <p><strong>Analyser les gens</strong><br />Robert Mercier</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/Frankenstein-cover.jpg" alt="Frankenstein" />
+          <p><strong>Frankenstein</strong><br />Mary Shelley</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/marcus.jpg" alt="Marcus Aurelius" />
+          <p><strong>Marcus Aurelius</strong><br />Ryan Holiday</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+        <div class="book">
+          <img src="photo/verity.jpg" alt="Verity" />
+          <p><strong>Verity</strong><br />Colleen Hoover</p>
+          <button class="add-to-cart">🛒 Ajouter</button>
+        </div>
+      </div>
+
+      <button class="nav-button right" onclick="scrollBooks(1)">&#10095;</button>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

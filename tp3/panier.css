@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #fff;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+}
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+}
+nav a.active {
+  text-decoration: underline;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.sign-in {
+  background: transparent;
+  border: 1px solid #000;
+}
+.sign-up {
+  background: #4b3ed4;
+  color: #fff;
+}
+
+main.cart {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+main.cart h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+.cart-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.item-info {
+  flex: 1;
+}
+.item-info h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.item-info p {
+  font-size: 14px;
+  color: #555;
+}
+
+.remove-item {
+  background: transparent;
+  color: #c00;
+  border: 1px solid #c00;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.remove-item:hover {
+  background: #c00;
+  color: #fff;
+}
+
+.cart-actions {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-actions label {
+  font-size: 16px;
+}
+.cart-actions input {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.cart-actions button {
+  background: #4b3ed4;
+  color: #fff;
+}
+
+.return-date {
+  margin-top: 20px;
+  text-align: right;
+}
+.return-date p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.return-date button {
+  background: #4b3ed4;
+  color: #fff;
+}

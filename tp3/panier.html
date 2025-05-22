@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panier - Ma Biblio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="panier.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">MA BIBLIO</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">ACCUEIL</a></li>
+        <li><a href="catalogue.html">BIBLIOTHÈQUE</a></li>
+        <li><a href="panier.html">PANIER</a></li>
+        <li><a href="apropo.html">À PROPOS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart">
+    <h1>Mon Panier</h1>
+
+    <div id="cartItems" class="cart-items">
+      
+    </div>
+
+    <div class="cart-actions">
+      <label for="daNumber">Numéro de DA :</label>
+      <input type="text" id="daNumber" placeholder="Entrez votre numéro de DA" />
+      <button id="daSubmit">Valider</button>
+    </div>
+
+    
+    <div id="penalitesContainer" class="penalites" style="margin-top: 20px;"></div>
+
+    <div id="returnDateContainer" class="return-date" style="margin-top: 20px;">
+      <p>Date de remise : <span id="returnDate">2025-06-04</span></p>
+      <button id="finalize">Finaliser mon panier</button>
+    </div>
+  </main>
+
+  <script src="panier.js"></script>
+</body>
+</html>
